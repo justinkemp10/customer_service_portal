@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const ticket of projectData) {
+  for (const ticket of TicketData) {
     await Ticket.create({
       ...ticket,
       user_id: users[Math.floor(Math.random() * users.length)].id,
