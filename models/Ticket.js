@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 //need to update project to ticket and value pairs
-class Project extends Model {}
+class Ticket extends Model {}
 
-Project.init(
+Ticket.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -40,8 +40,8 @@ Project.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'ticket',
   }
 );
 
-module.exports = Project;
+module.exports = Ticket;
