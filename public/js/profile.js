@@ -2,13 +2,13 @@ const newFormHandler = async (event) => {
     event.preventDefault();
 //   this will need to be changed once make ticket model
     const name = document.querySelector('#project-name').value.trim();
-    const needed_funding = document.querySelector('#project-funding').value.trim();
+    // const needed_funding = document.querySelector('#project-funding').value.trim();
     const description = document.querySelector('#project-desc').value.trim();
   // same as above will be needed
-    if (name && needed_funding && description) {
-      const response = await fetch(`/api/tickets`, {
+    if (name && description) {
+      const response = await fetch(`/api/ticket`, {
         method: 'POST',
-        body: JSON.stringify({ name, needed_funding, description }),
+        body: JSON.stringify({ name, description }),
         headers: {
           'Content-Type': 'application/json',
         },
