@@ -6,12 +6,7 @@ router.get('/', async (req, res) => {
   try {
     // Get all ticket and JOIN with user data
     const ticketData = await Ticket.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+    attributes: ['name','date_created','customer','description','phone','email','priority']
     });
 
     // Serialize data so the template can read it

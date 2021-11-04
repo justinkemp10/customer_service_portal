@@ -20,7 +20,9 @@
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile">profile</a> |
+       <a href="/">dashboard</a> |
         <button class="no-button" id="logout">logout</button>
+   
         {{else}}
         <a href="/login">login</a>
         <a href="/signup">signup</a>
@@ -41,5 +43,5 @@
   <script src="/js/loginout.js"></script>
   {{/if}}
 </body>
-
+<script src="./js/profile.js"></script>
 </html>

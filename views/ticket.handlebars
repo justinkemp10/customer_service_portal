@@ -1,14 +1,19 @@
-<div class="text-center">
+{{!-- <div class="text-center">
   <h2>{{name}}</h2>
-  {{!-- <p>{{{get_emoji}}}</p> --}}
+
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  {{!-- <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p> --}}
+
   <p>
     <button class="btn btn-primary">Resolve this ticket!</button>
   </p>
-</div>
+</div> --}}
+
+
+
+<div class="card single-post-padding">
+    <h1 id="post-title" class="post-header">{{name}} </h1>
+    <h4>Posted by {{user.name}} on {{format_date date_created}}</h4>
+    <div class="container">
+        <p id="post-body" class="post-text post-text-padding">{{description}}</p>
+    </div>
