@@ -1,14 +1,26 @@
 [
     {
       "name": "Test Ticket",
-      "description": "Lorem ipsum dolor sit amet, consecte."
+      "description": "Lorem ipsum dolor sit amet, consecte.",
+      "customer": "Lorem ipsum dolor sit amet, consecte.",
+      "email": "Lorem ipsum dolor sit amet, consecte.",
+      "priority": "High",
+      "phone": "Lorem ipsum dolor sit amet, consecte."
     },
     {
       "name": "Test Ticket",
-      "description": "Loresnare. Duis malhicula. Aliqu at elementum sem pulvinar ut.Pectus sed dictum finibus, ante erat facilisis nisis."
+      "description": "Loresnare. Duis malhicula. Aliqu at elementum sem pulvinar ut.Pectus sed dictum finibus, ante erat facilisis nisis.",
+      "customer": "Lorem ipsum dolor sit amet, consecte.",
+      "email": "Lorem ipsum dolor sit amet, consecte.",
+      "priority": "High",
+      "phone": "Lorem ipsum dolor sit amet, consecte."
     },
     {
       "name": "Ticket",
-      "description": "ullamcorper sodales sapien vitae malesuada. Aliquam semper."
+      "description": "ullamcorper sodales sapien vitae malesuada. Aliquam semper.",
+      "customer": "Lorem ipsum dolor sit amet, consecte.",
+      "email": "Lorem ipsum dolor sit amet, consecte.",
+      "priority": "High",
+      "phone": "Lorem ipsum dolor sit amet, consecte."
     }
   ]
