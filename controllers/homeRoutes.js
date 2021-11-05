@@ -4,10 +4,23 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all ticket and JOIN with user data
+    
+    // Get all projects and JOIN with user data
     const ticketData = await Ticket.findAll({
-    attributes: ['name','date_created','customer','description','phone','email','priority']
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
     });
+
+    // router.get('/', async (req, res) => {
+    //   try {
+    //     // Get all ticket and JOIN with user data
+    //     const ticketData = await Ticket.findAll({
+    //     attributes: ['name','date_created','description','priority']
+    //     });
 
     // Serialize data so the template can read it
     const tickets = ticketData.map((ticket) => ticket.get({ plain: true }));

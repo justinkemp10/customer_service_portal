@@ -4,15 +4,15 @@ const newFormHandler = async (event) => {
     const name = document.querySelector('#project-name').value.trim();
     // const needed_funding = document.querySelector('#project-funding').value.trim();
     const description = document.querySelector('#project-desc').value.trim();
-    const customer = document.querySelector('#customer-name').value.trim();
-    const phone = document.querySelector('#phone').value.trim();
-    const email = document.querySelector('#email').value.trim();
-    const priority = document.querySelector('#priority').value.trim();
+    // const customer = document.querySelector('#customer-name').value.trim();
+    // const phone = document.querySelector('#phone').value.trim();
+    // const email = document.querySelector('#email').value.trim();
+    // const priority = document.querySelector('#priority').value.trim();
   // same as above will be needed
-    if (name && description&& customer&& phone&& email &&priority ) {
-      const response = await fetch(`/api/ticket`, {
+    if (name && description) {
+      const response = await fetch(`/api/tickets`, {
         method: 'POST',
-        body: JSON.stringify({ name, description,customer,phone,email,priority }),
+        body: JSON.stringify({ name, description }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -21,7 +21,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create project111');
       }
     }
   };
@@ -46,7 +46,7 @@ const newFormHandler = async (event) => {
     .querySelector('.new-project-form')
     .addEventListener('submit', newFormHandler);
   
-  document
-    .querySelector('.project-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.project-list')
+  //   .addEventListener('click', delButtonHandler);
   
