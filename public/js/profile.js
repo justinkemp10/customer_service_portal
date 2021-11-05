@@ -10,9 +10,9 @@ const newFormHandler = async (event) => {
     // const priority = document.querySelector('#priority').value.trim();
   // same as above will be needed
     if (name && description) {
-      const response = await fetch(`/api/tickets`, {
+      const response = await fetch(`/api/ticket`, {
         method: 'POST',
-        body: JSON.stringify({ name, description }),
+        body: JSON.stringify({ name: name, description: description }),
         headers: {
           'Content-Type': 'application/json',
         },
