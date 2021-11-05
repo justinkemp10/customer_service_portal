@@ -1,2 +1,14 @@
 DROP DATABASE IF EXISTS USERCS_db;
 CREATE DATABASE USERCS_db;
+
+USE DATABASE USERCS_db;
+
+CREATE TABLE tickets (
+    id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    date_created DATETIME NOT NULL,
+    user_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);

@@ -3,6 +3,8 @@ const { Ticket } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
+  
+  console.log(req.params);
   try {
     const newTicket = await Ticket.create({
       ...req.body,
