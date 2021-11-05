@@ -15,10 +15,10 @@ Ticket.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    customer: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // customer: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     description: {
       type: DataTypes.STRING,
     },
@@ -31,25 +31,25 @@ Ticket.init(
     //   type: DataTypes.FLOAT,
     //   allowNull: false,
     // },
-      phone: {
-        type: DataTypes.STRING,
-      allowNull: false,
-    },
-      email: {
-        type: DataTypes.STRING,
-      allowNull: false,
-    },
-      priority: {
-        type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'user',
-    //     key: 'id',
-    //   },
+    //   phone: {
+    //     type: DataTypes.STRING,
+    //   allowNull: false,
     // },
+    //   email: {
+    //     type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    //   priority: {
+    //     type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
