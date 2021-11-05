@@ -1,14 +1,25 @@
 DROP DATABASE IF EXISTS USERCS_db;
 CREATE DATABASE USERCS_db;
+USE USERCS_db;
 
-USE DATABASE USERCS_db;
+CREATE TABLE user (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE (email)
 
-CREATE TABLE tickets (
-    id INT NOT NULL,
+);
+
+
+CREATE TABLE ticket (
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     date_created DATETIME NOT NULL,
-    user_id INT,
+    user_id INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (user_id) REFERENCES user(id)
+    FOREIGN KEY (user_id) REFERENCES user (id)
 );
+
