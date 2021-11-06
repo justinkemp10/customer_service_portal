@@ -16,6 +16,7 @@ const seedDatabase = async () => {
     await Ticket.create({
       ...ticket,
       user_id: users[Math.floor(Math.random() * users.length)].id,
+      // user_email:users.email
     });
   }
 

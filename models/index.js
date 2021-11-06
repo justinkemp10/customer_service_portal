@@ -3,11 +3,14 @@ const Ticket = require('./Ticket');
 
 User.hasMany(Ticket, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
+  
+  
 });
 
 Ticket.belongsTo(User, {
-  foreignKey: 'user_id'
+  foreignKey: 'user_id',
+ 
 });
 
 module.exports = { User, Ticket };
