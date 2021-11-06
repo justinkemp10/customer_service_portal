@@ -23,15 +23,25 @@ Ticket.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    priority: {
+      type: DataTypes.STRING,
+    allowNull: false,
+  },
+    phone: {
+      type: DataTypes.STRING,
+    allowNull: false,
+  },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
+
       },
     },
-  },
-  {
+},
+{
+  
     sequelize,
     timestamps: false,
     freezeTableName: true,
