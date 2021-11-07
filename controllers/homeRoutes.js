@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['name', 'email']
         },
       ],
     });
@@ -41,11 +41,11 @@ router.get('/ticket/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['name', 'email']
         },
       ],
     });
-
+    // console.log(ticketData);
     const ticket = ticketData.get({ plain: true });
 
     res.render('ticket', {
