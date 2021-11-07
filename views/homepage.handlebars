@@ -1,52 +1,79 @@
 <!-- Loop over each object in the tickets array -->
 {{#if logged_in}}
 
-  <div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Ticket:</h3>
+  <div class="max-w-sm mt-4 pl-5 flex justify-center">
+    <div class="">
+      <h3 class="text-2xl font-bold text-center">Create a New Ticket</h3>
 
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">ticket name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      {{!-- <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div> --}}
-       <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-        <div class="form-group">
-        <label for="priority">Priority:</label> 
-         <select id="priority" name="priority">
-       <option value="high">High</option>
-    <option value="neutral">Neutral</option>
-    <option value="low">Low</option>
-    <option value="none">N/A</option>
-    </select>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
+      <div class="pt-5 pb-10">
+      <form class="form new-project-form">
+        <div class="shadow sm:rounded-md sm:overflow-hidden">
+          <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+            <div class="grid grid-cols-3 gap-6">
+              <div class="form-group col-span-3 sm:col-span-2">
+                <label for="project-name" class="block text-sm font-medium text-gray-700">
+                  Ticket Name
+                </label>
+                <div class="mt-1 flex rounded-md">
+                  <input class="form-input shadow-lg w-auto px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" id="project-name" name="project-name">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="about" class="block text-sm font-medium text-gray-700">
+                Description
+              </label>
+            <div class="mt-1">
+              <textarea class="form-input shadow-lg block w-full w-auto px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" id="project-desc" name="project-desc" placeholder="Describe your request here..."></textarea>
+            </div>
+              <p class="mt-2 text-xs text-gray-500">
+                A brief description of your customer service request.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6">
+              <div class="form-group col-span-3 sm:col-span-2">
+                <label for="priority" class="block text-sm font-medium text-gray-700">
+                  Priority
+                </label>
+                <div class="mt-1 flex rounded-md">
+                  <select class="form-input shadow-lg block w-full w-auto px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" id="priority" name="priority">
+                    <option value="High">High</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Low">Low</option>
+                    <option value="N/A">N/A</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6">
+              <div class="form-group col-span-3 sm:col-span-2">
+                <label for="phone" class="block text-sm font-medium text-gray-700">
+                  Phone Number
+                </label>
+                <div class="mt-1 flex rounded-md">
+                  <input class="form-input shadow-lg w-auto px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"  id="phone" name="phone" type="tel"
+                  required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                  <span class="validity"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 form-group">
+              <button type="submit" class="bg-green-600 text-white-700 font-semibold text-white py-2 px-4 border border-blue-500 hover:text-black hover:bg-green-300 rounded justify-center">Create</button>
+            </div>
+
+          </div>
+        </div>  
+      </form>
   </div>
 
-  
 
-{{!-- Removed view of seeded tickets from dashboard --}}
-  {{!-- {{#each tickets as |ticket| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <p>Created by {{ticket.name}} on {{format_date ticket.date_created}}</p>
+    </div>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{ticket.description}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
+
  {{else}}
  <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white m-4 " id="homebutton">
       <div class="flex flex-col min-h-full">
@@ -59,27 +86,25 @@
           </p>
         </div>
         <div class="px-5 py-3 border-t bg-gray-100 flex justify-end">
-          <a href="/login" target="_parent"><button class= "bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white font-medium text-sm py-1 px-5 rounded mr-32">Continue</button></a>
+          <a href="/login" target="_parent"><button class="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white font-medium text-sm py-1 px-5 rounded mr-32">Continue</button></a>
         </div>
       </div>
     </div>
 
 
-    <style>
+  <style>
+    body {
+    min-width: 100vw;
+    min-height: 100vh;
+    {{!-- background-image: radial-gradient(circle 1085px at 4.8% 16.2%,  rgba(255,146,139,1) 0%, rgba(255,172,129,1) 90%) !important; --}}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-body {
-  min-width: 100vw;
-  min-height: 100vh;
-  {{!-- background-image: radial-gradient(circle 1085px at 4.8% 16.2%,  rgba(255,146,139,1) 0%, rgba(255,172,129,1) 90%) !important; --}}
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} 
 {{/if}}
 
  
-
-
 
 <script src="./js/profile.js"></script>

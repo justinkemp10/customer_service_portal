@@ -13,12 +13,12 @@
 
 <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 bg-opacity-40">
  <div class="px-6 py-4">
-    <h1 id="post-title" class="font-bold text-xl mb-2">{{name}} </h1>
-     <p id="post-body" class="text-gray-900 text-base"> Priority:{{priority}}</p>
+    <h1 id="post-title" class="font-bold text-xl mb-2 capitalize">{{name}} </h1>
+     <p id="post-body" class="text-gray-900 text-base"> Priority: {{priority}}</p>
     <h4 class="text-gray-700 text-base">Posted by {{user.name}} on {{format_date date_created}}</h4>
     <div class="container">
-        <p id="post-body" class="text-black-700 text-base">{{description}} </p>
-       <p id="post-body" class="text-gray-700 text-base">Contact Info: Call at {{phone}} or Email at {{user.email}}</p>
+        <p id="post-body" class="text-black-700 text-base">{{description}}</p>
+       <p id="post-body" class="text-gray-700 text-base text-italic">Contact Info: Call at {{phone}} or Email at {{user.email}}</p>
        
        </div>
     </div>
