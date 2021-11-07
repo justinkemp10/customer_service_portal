@@ -47,8 +47,39 @@
   </div>
 </div>
 {{/each}} --}}
+ {{else}}
+ <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white m-4 " id="homebutton">
+      <div class="flex flex-col min-h-full">
+        {{!-- <div class="px-6 py-4 border-b"> --}}
+          {{!-- <div class="text-xl text-center">Block</div> --}}
+        </div>
+        <div class="px-6 py-10 flex-grow">
+          <p class="text-gray-700 text-base">
+        A customer service portal designed to make your service requests easier!
+          </p>
+        </div>
+        <div class="px-5 py-3 border-t bg-gray-100 flex justify-end">
+          <a href="/login" target="_parent"><button class= "bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white font-medium text-sm py-1 px-5 rounded mr-32">Continue</button></a>
+        </div>
+      </div>
+    </div>
 
 
+    <style>
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  {{!-- background-image: radial-gradient(circle 1085px at 4.8% 16.2%,  rgba(255,146,139,1) 0%, rgba(255,172,129,1) 90%) !important; --}}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
 {{/if}}
+
+ 
+
+
 
 <script src="./js/profile.js"></script>
