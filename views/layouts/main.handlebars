@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Service Portal</title>
+  <title>Ticket Stack</title>
  {{!-- <link rel="stylesheet" href="/css"> --}}
   <link rel="stylesheet" href="/css/tailwind.css"> 
 </head>
@@ -25,9 +25,9 @@
         <button class="no-button text-white  hover:bg-red-600 ..." id="logout">logout</button>
    
         {{else}}
-           <p class= "text-4xl text-white flex justify-center" >Welcome! <p>
-        <a class= "text-4xl text-white hover:text-green-200 ..." href="/login">login</a> |
-        <a class="text-4xl text-white hover:text-green-200 ..." href="/signup">signup</a>
+           <p class= "text-4xl text-white flex justify-center" >Welcome to Ticket Stack! <p>
+        {{!-- <a class= "text-4xl text-white hover:text-green-200 ..." href="/login">login</a> |
+        <a class="text-4xl text-white hover:text-green-200 ..." href="/signup">signup</a> --}}
         {{/if}}
       </nav>
     </header>
