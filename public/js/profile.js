@@ -41,12 +41,20 @@ const newFormHandler = async (event) => {
       }
     }
   };
+
+
+
+
+
+
+
   //these will be needed to update as well
   document
     .querySelector('.new-project-form')
     .addEventListener('submit', newFormHandler);
   
-  // document
-  //   .querySelector('.project-list')
-  //   .addEventListener('click', delButtonHandler);
+  document
+    .querySelector('.project-list')
+    .addEventListener('click', delButtonHandler);
   
+
