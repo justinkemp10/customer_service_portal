@@ -1,19 +1,19 @@
 <div class="row">
-  <div class="auto-cols-auto text-3xl sm:text-lg font-bold pl-5">
+  <div class="auto-cols-auto text-3xl sm:text-lg font-bold text-center sm:text-left sm:pl-5">
     <h2 class="capitalize">Welcome, {{name}}!</h2>
   </div>
 </div>
 
 
-<div class="row pt-8 pl-10">
-  <div class="col-md-6">
+<div class="row pt-8">
+  <div class="col-md-6 text-center sm:text-left sm:pl-5">
     <a class="text-md text-white font-bold bg-blue-500 py-2 px-4 border border-black-700 rounded-full hover:bg-opacity-50" href="/">Create a New Ticket</a>
   </div>
 
   {{#if tickets.length}}
   
-  <div class="col-md-6 project-list mt-20 sm:mt-10 space-y-3 absolute inset-y-0 right-20 mr-20 pl-20 sm:pr-20">
-    <h3 class="text-2xl font-bold underline mt-20 sm:mt-0">Current Tickets</h3>
+  <div class="col-md-6 project-list mt-20 sm:mt-10 space-y-3 sm:absolute inset-y-0 right-20 mr-20 pl-20 sm:pr-20">
+    <h3 class="text-2xl font-bold underline mt-20 sm:mt-0 text-center">Current Tickets</h3>
 
     {{#each tickets as |ticket|}}
     <div class="row mb-2 border-solid border-2 border-yellow-500 rounded-md">
