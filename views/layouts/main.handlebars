@@ -13,15 +13,15 @@
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2 ">
       
-      <nav>
+      <nav class= "flex">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a class="text-white hover:underline hover:text-blue-700 ..." href="/profile">profile</a> |
-        <a class="text-white hover:underline hover:text-blue-700" href="/">dashboard</a> |
-        <button class="no-button text-white hover:underline hover:text-red-600 ..." id="logout">logout</button>
+        <a class=" flex-auto lg:flex-none text-lg lg:text-base text-white hover:underline hover:text-blue-700 ..." href="/profile">profile</a> |
+        <a class="flex-auto lg:flex-none text-lg lg:text-base pl-3 lg:pl-1 text-white hover:underline hover:text-blue-700" href="/"> dashboard</a> |
+        <button class=" flex-auto lg:flex-none text-lg lg:text-base  no-button text-white hover:underline hover:text-red-600 ..." id="logout">logout</button>
    
         {{else}}
-           <p class= "text-4xl text-white flex justify-center" >Welcome to Ticket Stack! <p>
+           <p class= "text-4xl text-white flex text-center sm:text-left justify-center" >Welcome to Ticket Stack! <p>
         {{!-- <a class= "text-4xl text-white hover:text-green-200 ..." href="/login">login</a> |
         <a class="text-4xl text-white hover:text-green-200 ..." href="/signup">signup</a> --}}
         {{/if}}
