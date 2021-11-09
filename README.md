@@ -11,8 +11,10 @@ https://customer-service-dashboard.herokuapp.com/
 1. [Description](#Description)
 2. [User Story](#User-Story)
 3. [Initialization](#Initialization)
-4. [License](#License)
-5. [Questions](#Questions)
+4. [Screenshots](#Screenshots)
+5. [Mobile](#Mobile)
+6. [License](#License)
+7. [Questions](#Questions)
 
 ## Description
 This application is a customer service experience app that is designed for businesses to use to track individual customer service requests for their customers. Once a customer signs up, they are given access to create & submit a customer service ticket. They are presented with a form to fill out and when it's completed, the ticket is generated and added to their "Current Tickets" list. 
