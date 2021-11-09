@@ -40,13 +40,13 @@ Further development will include administrative credentials that allow the busin
 ![profile-with-ticket](images/Ticket-Stack-profile2.png)
 ![ticket](images/Ticket-Stack-ticket.png)
 
-## Mobile Screenshots
-![landing](images/IMG_0595.png)
-![login](images/IMG_0597.png)
-![dashboard](images/IMG_0599.png)
-![profile](images/IMG_0598.png)
-![profile-with-ticket](images/IMG_0600.png)
-![ticket](images/IMG_0601.png)
+## Mobile
+![landing](images/IMG-0595.png)
+![login](images/IMG-0597.png)
+![dashboard](images/IMG-0599.png)
+![profile](images/IMG-0598.png)
+![profile-with-ticket](images/IMG-0600.png)
+![ticket](images/IMG-0601.png)
 
 ## License
 - MIT License
