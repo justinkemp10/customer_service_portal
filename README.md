@@ -5,34 +5,49 @@
 https://github.com/justinkemp10/customer_service_portal
 
 # Link to Public Heroku Application:
+https://customer-service-dashboard.herokuapp.com/
 
-# Disclaimer
-*to be edited* A clean interface for customer service requests
 ## Table of Contents
 1. [Description](#Description)
-2. [Video Walkthrough](#Installation)
-3. [User Story](#User-Story)
-4. [Initialization](#Initialization)
-5. [License](#License)
-6. [Questions](#Questions)
+2. [User Story](#User-Story)
+3. [Initialization](#Initialization)
+4. [License](#License)
+5. [Questions](#Questions)
+
 ## Description
-- This project is to showcase to a user how to work in a database that contains specific employee information within a company's records. Using inquirer we can help a user navigate a database. We can guide the user using quiestions to update the company's database.
-## Video Walkthrough
-- Here is a walkthrough of how the app works
-  <!-- <a target="_blank" href="https://watch.screencastify.com/v/Qb2YToN6wR4uR6kPchnk">View the Footage Here</a> -->
+This application is a customer service experience app that is designed for businesses to use to track individual customer service requests for their customers. Once a customer signs up, they are given access to create & submit a customer service ticket. They are presented with a form to fill out and when it's completed, the ticket is generated and added to their "Current Tickets" list. 
+
+Further development will include administrative credentials that allow the business to respond to tickets and interact with their customers directly.
+
 ## User Story
     As a business who serves customers
     I WANT to be able to interact with my customers to review their experiences
     SO THAT I can provide the best products and service to meet my customer needs.
 
-
 ## Initialization
 - Download project files via Github
 - Open server.js file and change the password field to your own MySQL password
 - Open Terminal and proceed to type "npm install"
-- From here we will move to our database so type "cd db/" then type "mysql -u root -p" and enter your personal password. Now we will type "source schema.sql" and "source seeds.sql" 
-- To exit MySQL we will type "exit" then proceed to type "npm run start"
-- Now you can view the database and add or remove things
+- From here we will move to our database so type "cd db/" then type "mysql -u root -p" and enter your personal password. Now we will type "source schema.sql" 
+- To exit MySQL we will type "exit" then proceed to type "npm run seed" and "npm run watch"
+- Now the database is created, you can use the application and it will store data given by the user
+
+## Screenshots
+![landing](images/Ticket-Stack1.png)
+![login](images/Ticket-Stack-login.png)
+![dashboard](images/Ticket-Stack-dashboard.png)
+![profile](images/Ticket-Stack-profile1.png)
+![profile-with-ticket](images/Ticket-Stack-profile2.png)
+![ticket](images/Ticket-Stack-ticket.png)
+
+## Mobile Screenshots
+![landing](images/IMG_0595.png)
+![login](images/IMG_0597.png)
+![dashboard](images/IMG_0599.png)
+![profile](images/IMG_0598.png)
+![profile-with-ticket](images/IMG_0600.png)
+![ticket](images/IMG_0601.png)
+
 ## License
 - MIT License
 - Copyright 2021
