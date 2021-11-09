@@ -41,12 +41,12 @@ Further development will include administrative credentials that allow the busin
 ![ticket](images/Ticket-Stack-ticket.png)
 
 ## Mobile
-![landing](images/IMG-0595.png)
-![login](images/IMG-0597.png)
-![dashboard](images/IMG-0599.png)
-![profile](images/IMG-0598.png)
-![profile-with-ticket](images/IMG-0600.png)
-![ticket](images/IMG-0601.png)
+![landing](images/IMG-0595.PNG)
+![login](images/IMG-0597.PNG)
+![dashboard](images/IMG-0599.PNG)
+![profile](images/IMG-0598.PNG)
+![profile-with-ticket](images/IMG-0600.PNG)
+![ticket](images/IMG-0601.PNG)
 
 ## License
 - MIT License
@@ -56,5 +56,8 @@ Further development will include administrative credentials that allow the busin
     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ## Questions
-- GitHub Profile: <a href="https://github.com/justinkemp10/customer_service_portal">Click Here</a><br>
+Edgar Ortega - <a href="https://github.com/EdgarO93">GitHub</a><br>
+Justin Kemp - <a href="https://github.com/justinkemp10/">GitHub</a><br>
+Jonathan Lino - <a href="https://github.com/BionicMatedorX">GitHub</a><br>
