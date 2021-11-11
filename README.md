@@ -7,6 +7,9 @@ https://github.com/justinkemp10/customer_service_portal
 # Link to Public Heroku Application:
 https://customer-service-dashboard.herokuapp.com/
 
+# Link to Presentation:
+https://docs.google.com/presentation/d/1CUa8UUpK5pH1V97gBnZiRgGdAugID3N0YTGPdbb7N-Y/edit?usp=sharing
+
 ## Table of Contents
 1. [Description](#Description)
 2. [User Story](#User-Story)
